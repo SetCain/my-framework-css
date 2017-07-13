@@ -1,0 +1,601 @@
+/*================================================
+                Positions start
+================================================*/
+
+/* block moves in body */
+.pos-absolute { position: absolute; } 
+
+/* line moves in own father */
+.pos-relative { position: relative; } 
+
+/* block stick in own posicion */
+.pos-fixed { position: fixed; } 
+
+/* line stick in own posicion */
+.pos-sticky {  
+  position: sticky; 
+  top: 0; 
+}
+
+/* Position float */
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.float-inherit {
+  float: inherit;
+}
+
+/* Media */
+@media screen and (min-width: 480px) {
+  /* block moves in body */
+  .pos-absolute-s { position: absolute; } 
+
+  /* line moves in own father */
+  .pos-relative-s { position: relative; } 
+
+  /* block stick in own posicion */
+  .pos-fixed-s { position: fixed; } 
+
+  /* line stick in own posicion */
+  .pos-sticky-s {  
+    position: sticky; 
+    top: 0; 
+  }
+
+  /* Position float */
+  .float-left-s {
+    float: left;
+  }
+  .float-right-s {
+    float: right;
+  }
+  .float-inherit-s {
+    float: inherit;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* block moves in body */
+  .pos-absolute-m { position: absolute; } 
+
+  /* line moves in own father */
+  .pos-relative-m { position: relative; } 
+
+  /* block stick in own posicion */
+  .pos-fixed-m { position: fixed; } 
+
+  /* line stick in own posicion */
+  .pos-sticky-m {  
+    position: sticky; 
+    top: 0; 
+  }
+
+  /* Position float */
+  .float-left-m {
+    float: left;
+  }
+  .float-right-m {
+    float: right;
+  }
+  .float-inherit-m {
+    float: inherit;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* block moves in body */
+  .pos-absolute-l { position: absolute; } 
+
+  /* line moves in own father */
+  .pos-relative-l { position: relative; } 
+
+  /* block stick in own posicion */
+  .pos-fixed-l { position: fixed; } 
+
+  /* line stick in own posicion */
+  .pos-sticky-l {  
+    position: sticky; 
+    top: 0; 
+  }
+
+  /* Position float */
+  .float-left-l {
+    float: left;
+  }
+  .float-right-l {
+    float: right;
+  }
+  .float-inherit-l {
+    float: inherit;
+  }
+}
+
+/*================================================
+                 Flexbox start
+================================================*/
+/* Default in flex-container; */
+.flex { 
+  display: flex;  
+  flex-direction: row; 
+  flex-wrap: nowrap; 
+  justify-content: flex-start;
+  align-items: flex-start;  
+  align-content: stretch;  
+  max-width: 90%;
+  margin: auto; 
+}
+
+/*================================================
+                  Direction
+================================================*/
+/*Default = flex-direction: row; */
+
+.row-reverse {  
+  flex-direction: row-reverse; 
+}
+.column { 
+  flex-direction: column; 
+}
+.column-reverse {  
+  flex-direction: column-reverse; 
+}
+
+/*================================================
+                    Justify
+================================================*/
+/* Default = justify-content: flex-start; */
+
+.just-end { 
+  justify-content: flex-end; 
+}
+.just-center { 
+  justify-content: center; 
+}
+.just-around { 
+  justify-content: space-around; 
+}
+.just-between { 
+  justify-content: space-between; 
+}
+
+/*================================================
+                      wrap
+================================================*/
+/* Default = flex-wrap: nowrap; */
+
+.wrap { 
+  flex-wrap: wrap; 
+}
+.wrap-reverse { 
+  flex-wrap: wrap-reverse; 
+}
+
+/*================================================
+                   Align items
+================================================*/
+/* Default = align-items: felx-start */
+
+.items-end { 
+  align-items: flex-end; 
+}
+.items-baseline { 
+  align-items: baseline; 
+}
+.items-center { 
+  align-items: center; 
+}
+.items-stretch { 
+  align-items: stretch; 
+}
+
+/*================================================
+                  Align content
+================================================*/
+/* Default = align-content: flex-start; */
+/* Works when the flex-container has multiple lines of flex-items */
+
+.item-content-end { 
+  align-content: flex-end; 
+}
+.item-content-center { 
+  align-content: center; 
+}
+.item-content-stretch { 
+  align-content: stretch; 
+}
+.item-content-around { 
+  align-content: space-around; 
+}
+.item-content-between { 
+  align-content: space-between; 
+}
+
+
+/*---------- FLEX ITEMS ----------*/
+
+
+/*================================================
+                   Align self
+================================================*/
+/* Default = align-self: flex-start; */
+
+.item-end { 
+  align-self: flex-end; 
+}
+.item-baseline { 
+  align-self: baseline; 
+}
+.item-center { 
+  align-self: center; 
+}
+.item-stretch { 
+  align-self: stretch; 
+}
+
+/*---------- SHORT HANDS ----------*/
+
+/*================================================
+                     Flex
+================================================*/
+/*
+  flex-grow = grow in available space - grow factor 1, 2, 3, ..., 
+  flex-shrink = decreases size in container, not overflow, default 1  
+  flex-basis = "width/hight" according to main axis 
+*/
+
+/* Example
+  nth-child(1) { flex: 20 }
+  nth-child(2) { flex: 80 }
+  
+  Like this:   ||  ||||||||
+*/ 
+
+/* Auto */
+.flex-auto {
+  flex: auto;
+}
+/* No flexible */
+.flex-none {
+  flex: 0 0 auto;
+}
+/* Default */
+.flex-default {
+  flex: 0 1 auto;
+}
+
+/* Media */
+@media screen and (min-width: 480px) {
+  .flex-s { 
+    display: flex;  
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    align-items: flex-start;  
+    align-content: stretch;  
+    margin: 0 auto 0;
+  }
+  
+  /*--------------- Direction --------------*/
+
+  .row-reverse-s {  
+    flex-direction: row-reverse; 
+  }
+  .column-s { 
+    flex-direction: column; 
+  }
+  .column-reverse-s {  
+    flex-direction: column-reverse; 
+  }
+
+  /*--------- Justify content --------*/
+
+  .just-end-s { 
+    justify-content: flex-end; 
+  }
+  .just-center-s { 
+    justify-content: center; 
+  }
+  .just-around-s { 
+    justify-content: space-around; 
+  }
+  .just-between-s { 
+    justify-content: space-between; 
+  }
+
+  /*-------------- wrap ----------------*/
+
+  .wrap-s { 
+    flex-wrap: wrap; 
+  }
+  .wrap-reverse-s { 
+    flex-wrap: wrap-reverse; 
+  }
+
+  /*----------- Align items -----------*/
+
+  .items-end-s { 
+    align-items: flex-end; 
+  }
+  .items-baseline-s { 
+    align-items: baseline; 
+  }
+  .items-center-s { 
+    align-items: center; 
+  }
+  .items-stretch-s { 
+    align-items: stretch; 
+  }
+
+  /*------------ Align content ------------*/
+
+  .item-content-end-s { 
+    align-content: flex-end; 
+  }
+  .item-content-center-s { 
+    align-content: center; 
+  }
+  .item-content-stretch-s { 
+    align-content: stretch; 
+  }
+  .item-content-around-s { 
+    align-content: space-around; 
+  }
+  .item-content-between-s { 
+    align-content: space-between; 
+  }
+
+  /*---------- FLEX ITEMS ----------*/
+
+  .item-end-s { 
+    align-self: flex-end; 
+  }
+  .item-baseline-s { 
+    align-self: baseline; 
+  }
+  .item-center-s { 
+    align-self: center; 
+  }
+  .item-stretch-s { 
+    align-self: stretch; 
+  }
+
+  /*---------- SHORT HANDS ----------*/
+
+  /* Auto */
+  .flex-auto-s {
+    flex: auto;
+  }
+  /* No flexible */
+  .flex-none-s {
+    flex: 0 0 auto;
+  }
+  /* Default */
+  .flex-default-s {
+    flex: 0 1 auto;
+  } 
+}
+
+@media screen and (min-width: 768px) {
+  .flex-m { 
+    display: flex;  
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    align-items: flex-start;  
+    align-content: stretch;  
+    margin: 0 auto 0;
+  }
+  
+  /*--------------- Direction --------------*/
+
+  .row-reverse-m {  
+    flex-direction: row-reverse; 
+  }
+  .column-m { 
+    flex-direction: column; 
+  }
+  .column-reverse-m {  
+    flex-direction: column-reverse; 
+  }
+
+  /*--------- Justify content --------*/
+
+  .just-end-m { 
+    justify-content: flex-end; 
+  }
+  .just-center-m { 
+    justify-content: center; 
+  }
+  .just-around-m { 
+    justify-content: space-around; 
+  }
+  .just-between-m { 
+    justify-content: space-between; 
+  }
+
+  /*-------------- wrap ----------------*/
+
+  .wrap-m { 
+    flex-wrap: wrap; 
+  }
+  .wrap-reverse-m { 
+    flex-wrap: wrap-reverse; 
+  }
+
+  /*----------- Align items -----------*/
+
+  .items-end-m { 
+    align-items: flex-end; 
+  }
+  .items-baseline-m { 
+    align-items: baseline; 
+  }
+  .items-center-m { 
+    align-items: center; 
+  }
+  .items-stretch-m { 
+    align-items: stretch; 
+  }
+
+  /*------------ Align content ------------*/
+
+  .item-content-end-m { 
+    align-content: flex-end; 
+  }
+  .item-content-center-m { 
+    align-content: center; 
+  }
+  .item-content-stretch-m { 
+    align-content: stretch; 
+  }
+  .item-content-around-m { 
+    align-content: space-around; 
+  }
+  .item-content-between-m { 
+    align-content: space-between; 
+  }
+
+  /*---------- FLEX ITEMS ----------*/
+
+  .item-end-m { 
+    align-self: flex-end; 
+  }
+  .item-baseline-m { 
+    align-self: baseline; 
+  }
+  .item-center-m { 
+    align-self: center; 
+  }
+  .item-stretch-m { 
+    align-self: stretch; 
+  }
+
+  /*---------- SHORT HANDS ----------*/
+
+  /* Auto */
+  .flex-auto-m {
+    flex: auto;
+  }
+  /* No flexible */
+  .flex-none-m {
+    flex: 0 0 auto;
+  }
+  /* Default */
+  .flex-default-m {
+    flex: 0 1 auto;
+  } 
+}
+
+@media screen and (min-width: 1024px) {
+  .flex-l { 
+    display: flex;  
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    align-items: flex-start;  
+    align-content: stretch;  
+    margin: 0 auto 0;
+  }
+  
+  /*--------------- Direction --------------*/
+
+  .row-reverse-l {  
+    flex-direction: row-reverse; 
+  }
+  .column-l { 
+    flex-direction: column; 
+  }
+  .column-reverse-l {  
+    flex-direction: column-reverse; 
+  }
+
+  /*--------- Justify content --------*/
+
+  .just-end-l { 
+    justify-content: flex-end; 
+  }
+  .just-center-l { 
+    justify-content: center; 
+  }
+  .just-around-l { 
+    justify-content: space-around; 
+  }
+  .just-between-l { 
+    justify-content: space-between; 
+  }
+
+  /*-------------- wrap ----------------*/
+
+  .wrap-l { 
+    flex-wrap: wrap; 
+  }
+  .wrap-reverse-l { 
+    flex-wrap: wrap-reverse; 
+  }
+
+  /*----------- Align items -----------*/
+
+  .items-end-l { 
+    align-items: flex-end; 
+  }
+  .items-baseline-l { 
+    align-items: baseline; 
+  }
+  .items-center-l { 
+    align-items: center; 
+  }
+  .items-stretch-l { 
+    align-items: stretch; 
+  }
+
+  /*------------ Align content ------------*/
+
+  .item-content-end-l { 
+    align-content: flex-end; 
+  }
+  .item-content-center-l { 
+    align-content: center; 
+  }
+  .item-content-stretch-l { 
+    align-content: stretch; 
+  }
+  .item-content-around-l { 
+    align-content: space-around; 
+  }
+  .item-content-between-l { 
+    align-content: space-between; 
+  }
+
+  /*---------- FLEX ITEMS ----------*/
+
+  .item-end-l { 
+    align-self: flex-end; 
+  }
+  .item-baseline-l { 
+    align-self: baseline; 
+  }
+  .item-center-l { 
+    align-self: center; 
+  }
+  .item-stretch-l { 
+    align-self: stretch; 
+  }
+
+  /*---------- SHORT HANDS ----------*/
+
+  /* Auto */
+  .flex-auto-l {
+    flex: auto;
+  }
+  /* No flexible */
+  .flex-none-l {
+    flex: 0 0 auto;
+  }
+  /* Default */
+  .flex-default-l {
+    flex: 0 1 auto;
+  } 
+}

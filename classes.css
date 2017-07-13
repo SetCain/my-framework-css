@@ -1,0 +1,222 @@
+/*====================================
+            Classes Start 
+=====================================*/
+
+/*---------- Hide on ----------*/
+@media only screen and (max-width: 768px) {
+  .hide-on-small { display: none; }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  .hide-on-med { display: none; }
+}
+
+@media only screen and (min-width: 1023px) {
+  .hide-on-large { display: none; }
+}
+
+@media only screen and (max-width: 1023px) {
+  .show-only-large { display: none; }
+}
+
+@media only screen and (min-width: 760px) {
+  .show-only-small { display: none; }
+}
+
+/*---------- Text align ----------*/
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+@media screen and (min-width: 480px) {
+ .center-s {
+    text-align: center;
+  }
+
+  .right-s {
+    text-align: right;
+  }  
+}
+
+@media screen and (min-width: 768px) {
+ .center-m {
+    text-align: center;
+  }
+
+  .right-m {
+    text-align: right;
+  }  
+}
+
+@media screen and (min-width: 1024px) {
+ .center-l {
+    text-align: center;
+  }
+
+  .right-l {
+    text-align: right;
+  }  
+}
+
+/*---------- Borders ----------*/
+.border {
+  border: thin solid black;
+}
+
+.radius {
+  border-radius: 10%;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 480px) {
+  .border-s {
+    border: thin solid black;
+  }
+
+  .radius-s {
+    border-radius: 10%;
+  }
+
+  .circle-s {
+    border-radius: 50%;
+  } 
+}
+
+@media screen and (min-width: 768px) {
+  .border-m {
+    border: thin solid black;
+  }
+
+  .radius-m {
+    border-radius: 10%;
+  }
+
+  .circle-m {
+    border-radius: 50%;
+  } 
+}
+
+@media screen and (min-width: 1024px) {
+  .border-l {
+    border: thin solid black;
+  }
+
+  .radius-l {
+    border-radius: 10%;
+  }
+
+  .circle-l {
+    border-radius: 50%;
+  } 
+}
+
+/*---------- Fonts ----------*/
+
+.font0 { font-size: 0; }
+
+.font1 { font-size: 1rem; }
+
+.font1-25 { font-size: 1.25rem; }
+
+.font1-5 { font-size: 1.5rem; }
+
+.font1-75 { font-size: 1.75rem; }
+
+.font2 { font-size: 2rem; }
+
+.font2-5 { font-size: 2.5rem; }
+
+.font3 { font-size: 3rem; }
+
+.font3-5 { font-size: 3.5rem; }
+
+.font4 { font-size: 4rem; }
+
+.font4-5 { font-size: 4.5rem; }
+
+.font5 { font-size: 5rem; }
+
+@media screen and (min-width: 480px) {
+  .font0-s { font-size: 0; }
+
+  .font1-s { font-size: 1rem; }
+
+  .font1-25-s { font-size: 1.25rem; }
+
+  .font1-5-s { font-size: 1.5rem; }
+
+  .font1-75-s { font-size: 1.75rem; }
+
+  .font2-s { font-size: 2rem; }
+
+  .font2-5-s { font-size: 2.5rem; }
+
+  .font3-s { font-size: 3rem; }
+
+  .font3-5-s { font-size: 3.5rem; }
+
+  .font4-s { font-size: 4rem; }
+
+  .font4-5-s { font-size: 4.5rem; }
+
+  .font5-s { font-size: 5rem; }
+}
+
+@media screen and (min-width: 768px) {
+  .font0-m { font-size: 0; }
+
+  .font1-m { font-size: 1rem; }
+
+  .font1-25-m { font-size: 1.25rem; }
+
+  .font1-5-m { font-size: 1.5rem; }
+
+  .font1-75-m { font-size: 1.75rem; }
+
+  .font2-m { font-size: 2rem; }
+
+  .font2-5-m { font-size: 2.5rem; }
+
+  .font3-m { font-size: 3rem; }
+
+  .font3-5-m { font-size: 3.5rem; }
+
+  .font4-m { font-size: 4rem; }
+
+  .font4-5-m { font-size: 4.5rem; }
+
+  .font5-m { font-size: 5rem; }
+}
+
+@media screen and (min-width: 1024px) {
+  .font0-l { font-size: 0; }
+
+  .font1-l { font-size: 1rem; }
+
+  .font1-25-l { font-size: 1.25rem; }
+
+  .font1-5-l { font-size: 1.5rem; }
+
+  .font1-75-l { font-size: 1.75rem; }
+
+  .font2-l { font-size: 2rem; }
+
+  .font2-5-l { font-size: 2.5rem; }
+
+  .font3-l { font-size: 3rem; }
+
+  .font3-5-l { font-size: 3.5rem; }
+
+  .font4-l { font-size: 4rem; }
+
+  .font4-5-l { font-size: 4.5rem; }
+
+  .font5-l { font-size: 5rem; }
+}

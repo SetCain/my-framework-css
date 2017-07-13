@@ -1,0 +1,9 @@
+.circle, .radius {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+.col { 
+  height: 80px;
+}
